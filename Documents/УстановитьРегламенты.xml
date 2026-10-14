@@ -183,11 +183,11 @@
 					</Attribute>
 					<Attribute uuid="c224ff7b-84ef-4590-8595-27db86d0d9ad">
 						<Properties>
-							<Name>РекомендацияПоПробегу</Name>
+							<Name>ПоПробегу</Name>
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Рекомендация по пробегу</v8:content>
+									<v8:content>Каждые КМ</v8:content>
 								</v8:item>
 							</Synonym>
 							<Comment/>
@@ -223,21 +223,23 @@
 							<DataHistory>Use</DataHistory>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="34679cae-7633-4b06-b1fb-72c284739f3a">
+					<Attribute uuid="e17ceb62-dc8a-4903-8542-c303e48555f0">
 						<Properties>
-							<Name>ДатаКрайнейОперации</Name>
+							<Name>ПоВремени</Name>
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Дата крайней операции</v8:content>
+									<v8:content>Каждые месяцев</v8:content>
 								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
-								<v8:Type>xs:dateTime</v8:Type>
-								<v8:DateQualifiers>
-									<v8:DateFractions>Date</v8:DateFractions>
-								</v8:DateQualifiers>
+								<v8:Type>xs:decimal</v8:Type>
+								<v8:NumberQualifiers>
+									<v8:Digits>2</v8:Digits>
+									<v8:FractionDigits>0</v8:FractionDigits>
+									<v8:AllowedSign>Any</v8:AllowedSign>
+								</v8:NumberQualifiers>
 							</Type>
 							<PasswordMode>false</PasswordMode>
 							<Format/>
