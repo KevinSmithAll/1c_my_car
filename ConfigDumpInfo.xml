@@ -12,9 +12,11 @@
 			<Metadata name="Catalog.РегламентныеОперации.TabularSection.ТребумыеДетали.Attribute.Количество" id="fbfdfda8-1733-40ea-a6b1-ceb826294352"/>
 		</Metadata>
 		<Metadata name="Catalog.РегламентныеОперации.ObjectModule" id="da489757-381e-4faa-b126-3aaf232918c9.0" configVersion="6e404e9ef58a9540a2bb394322d0c86c00000000"/>
-		<Metadata name="CommonForm.Форма" id="b5e673b4-85e4-4b5e-9566-70cda3f65282" configVersion="7d560b9caa66d74084af6495920eac9500000000"/>
-		<Metadata name="CommonForm.Форма.Form" id="b5e673b4-85e4-4b5e-9566-70cda3f65282.0" configVersion="cfe5b9b042b614448c431a06213ac20600000000"/>
-		<Metadata name="Configuration.МойАвтомобиль" id="bec91e1a-e6b1-46de-bf51-90594750b8df" configVersion="2fcbcd646093b8499962302abc47693e00000000"/>
+		<Metadata name="CommonForm.Форма" id="b5e673b4-85e4-4b5e-9566-70cda3f65282" configVersion="a0673c86f2427444b21d149461c3e12500000000"/>
+		<Metadata name="CommonForm.Форма.Form" id="b5e673b4-85e4-4b5e-9566-70cda3f65282.0" configVersion="d24a8fad34ee3a46a02a69bd3e6526a300000000"/>
+		<Metadata name="CommonModule.ОбщийМодуль" id="83ddf3e4-e35a-478c-b052-1878c0a60790" configVersion="445ecaa87d29454588c6397db0902b5f00000000"/>
+		<Metadata name="CommonModule.ОбщийМодуль.Module" id="83ddf3e4-e35a-478c-b052-1878c0a60790.0" configVersion="71d00ff1a1ac9541b4be19cc5fa246d000000000"/>
+		<Metadata name="Configuration.МойАвтомобиль" id="bec91e1a-e6b1-46de-bf51-90594750b8df" configVersion="fe1d5ddca5735a4f955192adf7b97fea00000000"/>
 		<Metadata name="Configuration.МойАвтомобиль.ClientApplicationInterface" id="2f441f09-e54c-4997-bc99-972ffb1e2f7b.b" configVersion="1dbe64bb29da1c439d1fdb1577ea59c600000000"/>
 		<Metadata name="Configuration.МойАвтомобиль.HomePageWorkArea" id="2f441f09-e54c-4997-bc99-972ffb1e2f7b.8" configVersion="88639cfd7944f0468d7c78a57624054d00000000"/>
 		<Metadata name="Constant.Автомобиль" id="0b2a1b0b-3ad0-4f2b-bd3e-12e0865f5827" configVersion="d3c8426c8e45cd448e88e149bd5e34dc00000000"/>
