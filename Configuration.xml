@@ -258,17 +258,15 @@
 			<Subsystem>Данные</Subsystem>
 			<CommonModule>ОбщийМодуль</CommonModule>
 			<Constant>Автомобиль</Constant>
-			<Constant>ТекущийПробег</Constant>
 			<CommonForm>Форма</CommonForm>
 			<Catalog>РегламентныеОперации</Catalog>
 			<Catalog>Автомобили</Catalog>
 			<Catalog>НоменклатураДеталей</Catalog>
+			<Catalog>РаботыПоАвто</Catalog>
 			<Document>ИзменитьПоказанияПробега</Document>
-			<Document>УстановитьРегламенты</Document>
 			<Document>ПроизвестиТО</Document>
 			<Enum>ЕдиницыИзмерения</Enum>
 			<DataProcessor>ЗагрузкаДеталей</DataProcessor>
-			<InformationRegister>УстановкаРегламентов</InformationRegister>
 			<InformationRegister>ПробегАвтомобиля</InformationRegister>
 			<InformationRegister>СделанныеТО</InformationRegister>
 		</ChildObjects>

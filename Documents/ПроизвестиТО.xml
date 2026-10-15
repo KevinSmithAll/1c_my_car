@@ -122,11 +122,11 @@
 			</Attribute>
 			<Attribute uuid="83d7254a-58e8-47d2-9a8c-e7aa428462f4">
 				<Properties>
-					<Name>Пробег</Name>
+					<Name>ТекущийПробег</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Пробег</v8:content>
+							<v8:content>Текущий пробег</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -189,18 +189,18 @@
 					<LineNumberLength>9</LineNumberLength>
 				</Properties>
 				<ChildObjects>
-					<Attribute uuid="c1a6f0ad-4396-4d90-9bce-f31c692d1c40">
+					<Attribute uuid="abde0355-1641-4b45-bade-9929d1d3a521">
 						<Properties>
-							<Name>РегламентнаяОперация</Name>
+							<Name>НаименованиеРаботы</Name>
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Регламентная операция</v8:content>
+									<v8:content>Наименование работы</v8:content>
 								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
-								<v8:Type>cfg:CatalogRef.РегламентныеОперации</v8:Type>
+								<v8:Type>cfg:CatalogRef.РаботыПоАвто</v8:Type>
 							</Type>
 							<PasswordMode>false</PasswordMode>
 							<Format/>

@@ -195,16 +195,16 @@
 			</Dimension>
 			<Dimension uuid="f6ab8349-265b-4476-8523-25215961fcf2">
 				<Properties>
-					<Name>РегламентнаяОперация</Name>
+					<Name>Работа</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Регламентная операция</v8:content>
+							<v8:content>Работа</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:CatalogRef.РегламентныеОперации</v8:Type>
+						<v8:Type>cfg:CatalogRef.РаботыПоАвто</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>

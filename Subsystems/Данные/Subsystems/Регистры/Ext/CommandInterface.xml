@@ -11,7 +11,7 @@
 				<xr:Common>true</xr:Common>
 			</Visibility>
 		</Command>
-		<Command name="InformationRegister.УстановкаРегламентов.StandardCommand.OpenList">
+		<Command name="0:24d82297-033b-4f73-a263-4a4345f4498a">
 			<Visibility>
 				<xr:Common>true</xr:Common>
 			</Visibility>
