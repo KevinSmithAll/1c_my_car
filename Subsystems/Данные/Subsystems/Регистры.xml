@@ -19,9 +19,9 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Content>
-				<xr:Item xsi:type="xr:MDObjectRef">24d82297-033b-4f73-a263-4a4345f4498a</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПробегАвтомобиля</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СделанныеТО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НачальныеПараметрыТО</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

@@ -269,6 +269,7 @@
 			<DataProcessor>ЗагрузкаДеталей</DataProcessor>
 			<InformationRegister>ПробегАвтомобиля</InformationRegister>
 			<InformationRegister>СделанныеТО</InformationRegister>
+			<InformationRegister>НачальныеПараметрыТО</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
