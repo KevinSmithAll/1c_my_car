@@ -5,7 +5,7 @@
 			<Metadata name="Catalog.Автомобили.Attribute.НачальныйПробег" id="d127e292-02e8-4313-90c9-7e581ff1f6eb"/>
 		</Metadata>
 		<Metadata name="Catalog.Автомобили.ObjectModule" id="5fb10141-340a-4939-994c-bc231283af3c.0" configVersion="bd9caa8f3099c6419c060732e29ce35200000000"/>
-		<Metadata name="Catalog.НоменклатураДеталей" id="ed5bf9ed-6442-4147-9d3c-1f5e20f0bf0a" configVersion="658c1abc84bc4144b47dee8be0ad517900000000">
+		<Metadata name="Catalog.НоменклатураДеталей" id="ed5bf9ed-6442-4147-9d3c-1f5e20f0bf0a" configVersion="2bd3761702ac754da04a8c43ffd8c23c00000000">
 			<Metadata name="Catalog.НоменклатураДеталей.Attribute.Автомобиль" id="40d53a68-6be9-4da6-9d9d-415a9f86507d"/>
 			<Metadata name="Catalog.НоменклатураДеталей.Attribute.Комментарий" id="72d1eb9b-a2e8-49f5-abc0-153f2f9be33f"/>
 			<Metadata name="Catalog.НоменклатураДеталей.TabularSection.Бренды.Attribute.Артикул" id="8413624b-9b6e-4704-9dc3-7e9a3ce558ad"/>
@@ -16,21 +16,22 @@
 		</Metadata>
 		<Metadata name="Catalog.НоменклатураДеталей.Form.ФормаВыбора" id="d19cfcbb-4221-4864-84cb-e341d7f48cad" configVersion="f26282dfca988f4d97a5446b01d6e18b00000000"/>
 		<Metadata name="Catalog.НоменклатураДеталей.Form.ФормаВыбора.Form" id="d19cfcbb-4221-4864-84cb-e341d7f48cad.0" configVersion="f0056a8e3a60ed44a55e8bddaa8c3d3800000000"/>
-		<Metadata name="Catalog.НоменклатураДеталей.Form.ФормаЭлемента" id="9b134954-f750-4d8d-ad36-3085be9ed7a0" configVersion="9e7b29dc9cec3b449b66ecaece04c02500000000"/>
-		<Metadata name="Catalog.НоменклатураДеталей.Form.ФормаЭлемента.Form" id="9b134954-f750-4d8d-ad36-3085be9ed7a0.0" configVersion="7a191064b7024644a0f067210f7ae21700000000"/>
-		<Metadata name="Catalog.РегламентныеОперации" id="da489757-381e-4faa-b126-3aaf232918c9" configVersion="092206c2811d5543bf6d2cb6b6439f6400000000">
+		<Metadata name="Catalog.НоменклатураДеталей.Form.ФормаЭлемента" id="9b134954-f750-4d8d-ad36-3085be9ed7a0" configVersion="019ba7aa2284eb46a4ac51f5ad9f52ec00000000"/>
+		<Metadata name="Catalog.НоменклатураДеталей.Form.ФормаЭлемента.Form" id="9b134954-f750-4d8d-ad36-3085be9ed7a0.0" configVersion="e23899d927fcc949a965c240e3ed2b4500000000"/>
+		<Metadata name="Catalog.РегламентныеОперации" id="da489757-381e-4faa-b126-3aaf232918c9" configVersion="a3842cf826faa24aad69764def70922900000000">
 			<Metadata name="Catalog.РегламентныеОперации.TabularSection.ТребумыеДетали.Attribute.ЕдиницаИзмерения" id="07747ea2-7347-4101-9aff-6e8f85006635"/>
-			<Metadata name="Catalog.РегламентныеОперации.Attribute.Автомобиль" id="4a3a072d-a7a6-433f-855b-0c84069c68ea"/>
 			<Metadata name="Catalog.РегламентныеОперации.TabularSection.ТребумыеДетали" id="e7ca1923-0acc-40f9-9a4a-37614fd0ec5c"/>
 			<Metadata name="Catalog.РегламентныеОперации.TabularSection.ТребумыеДетали.Attribute.Деталь" id="fab50119-9f44-4cc8-8637-fea8676a9fb3"/>
 			<Metadata name="Catalog.РегламентныеОперации.TabularSection.ТребумыеДетали.Attribute.Количество" id="fbfdfda8-1733-40ea-a6b1-ceb826294352"/>
 		</Metadata>
+		<Metadata name="Catalog.РегламентныеОперации.Form.ФормаЭлемента" id="26fbe4ea-5728-473d-9a66-2e22f4cadf4f" configVersion="8ccd144f6756ef469f09b6201c9fa3b100000000"/>
+		<Metadata name="Catalog.РегламентныеОперации.Form.ФормаЭлемента.Form" id="26fbe4ea-5728-473d-9a66-2e22f4cadf4f.0" configVersion="56913218bb86f142b6b433f239ea6f0200000000"/>
 		<Metadata name="Catalog.РегламентныеОперации.ObjectModule" id="da489757-381e-4faa-b126-3aaf232918c9.0" configVersion="6e404e9ef58a9540a2bb394322d0c86c00000000"/>
-		<Metadata name="CommonForm.Форма" id="b5e673b4-85e4-4b5e-9566-70cda3f65282" configVersion="a0673c86f2427444b21d149461c3e12500000000"/>
-		<Metadata name="CommonForm.Форма.Form" id="b5e673b4-85e4-4b5e-9566-70cda3f65282.0" configVersion="d24a8fad34ee3a46a02a69bd3e6526a300000000"/>
+		<Metadata name="CommonForm.Форма" id="b5e673b4-85e4-4b5e-9566-70cda3f65282" configVersion="3fc0e5d7b260014f8dbf4ed25aa2444500000000"/>
+		<Metadata name="CommonForm.Форма.Form" id="b5e673b4-85e4-4b5e-9566-70cda3f65282.0" configVersion="551b6816c00353469838cee00349927200000000"/>
 		<Metadata name="CommonModule.ОбщийМодуль" id="83ddf3e4-e35a-478c-b052-1878c0a60790" configVersion="445ecaa87d29454588c6397db0902b5f00000000"/>
 		<Metadata name="CommonModule.ОбщийМодуль.Module" id="83ddf3e4-e35a-478c-b052-1878c0a60790.0" configVersion="71d00ff1a1ac9541b4be19cc5fa246d000000000"/>
-		<Metadata name="Configuration.МойАвтомобиль" id="bec91e1a-e6b1-46de-bf51-90594750b8df" configVersion="0df3b0d3cc76b2489f1dae536027067100000000"/>
+		<Metadata name="Configuration.МойАвтомобиль" id="bec91e1a-e6b1-46de-bf51-90594750b8df" configVersion="b8652fbbb1c7e94ca335dcf12b3963d100000000"/>
 		<Metadata name="Configuration.МойАвтомобиль.ClientApplicationInterface" id="2f441f09-e54c-4997-bc99-972ffb1e2f7b.b" configVersion="1dbe64bb29da1c439d1fdb1577ea59c600000000"/>
 		<Metadata name="Configuration.МойАвтомобиль.HomePageWorkArea" id="2f441f09-e54c-4997-bc99-972ffb1e2f7b.8" configVersion="88639cfd7944f0468d7c78a57624054d00000000"/>
 		<Metadata name="Constant.Автомобиль" id="0b2a1b0b-3ad0-4f2b-bd3e-12e0865f5827" configVersion="d3c8426c8e45cd448e88e149bd5e34dc00000000"/>
@@ -82,5 +83,10 @@
 			<Metadata name="InformationRegister.УстановкаРегламентов.Resource.Пробег" id="b848047d-f567-460c-bf99-c873d8c74d05"/>
 		</Metadata>
 		<Metadata name="Language.Русский" id="d1ab7c00-3b2d-4e80-b2d5-41bfd3083dd8" configVersion="bcdcae55f6d0354db63a2200517d9bd600000000"/>
+		<Metadata name="Subsystem.Данные" id="9db04eb8-f559-4c1d-97c2-0ca14c30ca01" configVersion="88679f3482bbe14281b9898e343e6afe00000000"/>
+		<Metadata name="Subsystem.Данные.Subsystem.Документы" id="d3a36056-8313-4def-a5da-fe9504b73a5e" configVersion="7a1274d2e2b7874baa95ae0a6cf6e84500000000"/>
+		<Metadata name="Subsystem.Данные.Subsystem.Регистры" id="bd1807d1-08a4-4e96-9c63-b7c18dc1a904" configVersion="60116671b52b444ebfe5a32cd6346f4f00000000"/>
+		<Metadata name="Subsystem.Данные.Subsystem.Регистры.CommandInterface" id="bd1807d1-08a4-4e96-9c63-b7c18dc1a904.1" configVersion="1b6012505c15574080918e8fe2099be200000000"/>
+		<Metadata name="Subsystem.Данные.Subsystem.Справочники" id="4f4a7b42-cd66-4e2f-abb6-3d346195ce68" configVersion="6d319c077cae55448f98630b88d3e6fa00000000"/>
 	</ConfigVersions>
 </ConfigDumpInfo>

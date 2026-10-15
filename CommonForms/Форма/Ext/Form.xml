@@ -25,6 +25,7 @@
 		</InputField>
 		<Table name="ТЗ" id="7">
 			<Representation>List</Representation>
+			<ReadOnly>true</ReadOnly>
 			<AutoInsertNewRow>true</AutoInsertNewRow>
 			<EnableStartDrag>true</EnableStartDrag>
 			<EnableDrag>true</EnableDrag>

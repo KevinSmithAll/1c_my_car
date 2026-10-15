@@ -255,6 +255,7 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
+			<Subsystem>Данные</Subsystem>
 			<CommonModule>ОбщийМодуль</CommonModule>
 			<Constant>Автомобиль</Constant>
 			<Constant>ТекущийПробег</Constant>
