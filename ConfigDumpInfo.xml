@@ -5,8 +5,22 @@
 			<Metadata name="Catalog.Автомобили.Attribute.НачальныйПробег" id="d127e292-02e8-4313-90c9-7e581ff1f6eb"/>
 		</Metadata>
 		<Metadata name="Catalog.Автомобили.ObjectModule" id="5fb10141-340a-4939-994c-bc231283af3c.0" configVersion="bd9caa8f3099c6419c060732e29ce35200000000"/>
-		<Metadata name="Catalog.НоменклатураДеталей" id="ed5bf9ed-6442-4147-9d3c-1f5e20f0bf0a" configVersion="982b7b5b377bcf48bb89dae8851198d600000000"/>
-		<Metadata name="Catalog.РегламентныеОперации" id="da489757-381e-4faa-b126-3aaf232918c9" configVersion="3ec56b28e374b14ab13a72c74237d03800000000">
+		<Metadata name="Catalog.НоменклатураДеталей" id="ed5bf9ed-6442-4147-9d3c-1f5e20f0bf0a" configVersion="658c1abc84bc4144b47dee8be0ad517900000000">
+			<Metadata name="Catalog.НоменклатураДеталей.Attribute.Автомобиль" id="40d53a68-6be9-4da6-9d9d-415a9f86507d"/>
+			<Metadata name="Catalog.НоменклатураДеталей.Attribute.Комментарий" id="72d1eb9b-a2e8-49f5-abc0-153f2f9be33f"/>
+			<Metadata name="Catalog.НоменклатураДеталей.TabularSection.Бренды.Attribute.Артикул" id="8413624b-9b6e-4704-9dc3-7e9a3ce558ad"/>
+			<Metadata name="Catalog.НоменклатураДеталей.TabularSection.Бренды.Attribute.Страна" id="9bf077f8-6adc-40c5-8cfc-38c6fd09a1df"/>
+			<Metadata name="Catalog.НоменклатураДеталей.TabularSection.Бренды.Attribute.Фирма" id="ce69015a-e3ed-4ed1-a5f9-b0c13ce639a1"/>
+			<Metadata name="Catalog.НоменклатураДеталей.TabularSection.Бренды.Attribute.ПримернаяЦена" id="e3312dde-f73a-45d6-9035-617aa4371ba5"/>
+			<Metadata name="Catalog.НоменклатураДеталей.TabularSection.Бренды" id="fd8bff34-37e9-4df5-9203-dc64b6ceaed6"/>
+		</Metadata>
+		<Metadata name="Catalog.НоменклатураДеталей.Form.ФормаВыбора" id="d19cfcbb-4221-4864-84cb-e341d7f48cad" configVersion="f26282dfca988f4d97a5446b01d6e18b00000000"/>
+		<Metadata name="Catalog.НоменклатураДеталей.Form.ФормаВыбора.Form" id="d19cfcbb-4221-4864-84cb-e341d7f48cad.0" configVersion="f0056a8e3a60ed44a55e8bddaa8c3d3800000000"/>
+		<Metadata name="Catalog.НоменклатураДеталей.Form.ФормаЭлемента" id="9b134954-f750-4d8d-ad36-3085be9ed7a0" configVersion="9e7b29dc9cec3b449b66ecaece04c02500000000"/>
+		<Metadata name="Catalog.НоменклатураДеталей.Form.ФормаЭлемента.Form" id="9b134954-f750-4d8d-ad36-3085be9ed7a0.0" configVersion="7a191064b7024644a0f067210f7ae21700000000"/>
+		<Metadata name="Catalog.РегламентныеОперации" id="da489757-381e-4faa-b126-3aaf232918c9" configVersion="092206c2811d5543bf6d2cb6b6439f6400000000">
+			<Metadata name="Catalog.РегламентныеОперации.TabularSection.ТребумыеДетали.Attribute.ЕдиницаИзмерения" id="07747ea2-7347-4101-9aff-6e8f85006635"/>
+			<Metadata name="Catalog.РегламентныеОперации.Attribute.Автомобиль" id="4a3a072d-a7a6-433f-855b-0c84069c68ea"/>
 			<Metadata name="Catalog.РегламентныеОперации.TabularSection.ТребумыеДетали" id="e7ca1923-0acc-40f9-9a4a-37614fd0ec5c"/>
 			<Metadata name="Catalog.РегламентныеОперации.TabularSection.ТребумыеДетали.Attribute.Деталь" id="fab50119-9f44-4cc8-8637-fea8676a9fb3"/>
 			<Metadata name="Catalog.РегламентныеОперации.TabularSection.ТребумыеДетали.Attribute.Количество" id="fbfdfda8-1733-40ea-a6b1-ceb826294352"/>
@@ -16,24 +30,28 @@
 		<Metadata name="CommonForm.Форма.Form" id="b5e673b4-85e4-4b5e-9566-70cda3f65282.0" configVersion="d24a8fad34ee3a46a02a69bd3e6526a300000000"/>
 		<Metadata name="CommonModule.ОбщийМодуль" id="83ddf3e4-e35a-478c-b052-1878c0a60790" configVersion="445ecaa87d29454588c6397db0902b5f00000000"/>
 		<Metadata name="CommonModule.ОбщийМодуль.Module" id="83ddf3e4-e35a-478c-b052-1878c0a60790.0" configVersion="71d00ff1a1ac9541b4be19cc5fa246d000000000"/>
-		<Metadata name="Configuration.МойАвтомобиль" id="bec91e1a-e6b1-46de-bf51-90594750b8df" configVersion="fe1d5ddca5735a4f955192adf7b97fea00000000"/>
+		<Metadata name="Configuration.МойАвтомобиль" id="bec91e1a-e6b1-46de-bf51-90594750b8df" configVersion="0df3b0d3cc76b2489f1dae536027067100000000"/>
 		<Metadata name="Configuration.МойАвтомобиль.ClientApplicationInterface" id="2f441f09-e54c-4997-bc99-972ffb1e2f7b.b" configVersion="1dbe64bb29da1c439d1fdb1577ea59c600000000"/>
 		<Metadata name="Configuration.МойАвтомобиль.HomePageWorkArea" id="2f441f09-e54c-4997-bc99-972ffb1e2f7b.8" configVersion="88639cfd7944f0468d7c78a57624054d00000000"/>
 		<Metadata name="Constant.Автомобиль" id="0b2a1b0b-3ad0-4f2b-bd3e-12e0865f5827" configVersion="d3c8426c8e45cd448e88e149bd5e34dc00000000"/>
 		<Metadata name="Constant.ТекущийПробег" id="43aef32b-4f12-4584-adaf-3a97183ab048" configVersion="b04f1c98a896d245acef9e3e830758ab00000000"/>
-		<Metadata name="Document.ИзменитьПоказанияПробега" id="16e5bd63-ca9f-4726-bb11-2a2afce1eebd" configVersion="3f738f4db200e4448be54fec9c37a00900000000">
+		<Metadata name="DataProcessor.ЗагрузкаДеталей" id="ca81e0f5-67dc-4397-a64e-96ccc0303fa5" configVersion="31cf7e167ed3fd4bb2db7777189077be00000000"/>
+		<Metadata name="DataProcessor.ЗагрузкаДеталей.Form.Форма" id="92a44fe1-3011-40be-899d-25c1c8779842" configVersion="6d49cead3c1f234ebcced4002665203f00000000"/>
+		<Metadata name="DataProcessor.ЗагрузкаДеталей.Form.Форма.Form" id="92a44fe1-3011-40be-899d-25c1c8779842.0" configVersion="aead0ed396a61242882608851ad3ed7800000000"/>
+		<Metadata name="Document.ИзменитьПоказанияПробега" id="16e5bd63-ca9f-4726-bb11-2a2afce1eebd" configVersion="a91a2dd055e8d4408c5c230e0baad42300000000">
+			<Metadata name="Document.ИзменитьПоказанияПробега.Attribute.ЭтоТО" id="027763c5-ec14-4044-9886-794417473972"/>
 			<Metadata name="Document.ИзменитьПоказанияПробега.Attribute.Автомобиль" id="1596dbfc-3930-4749-8e8c-7d398c2c1951"/>
 			<Metadata name="Document.ИзменитьПоказанияПробега.Attribute.ПоказаниеОдометра" id="c4a572f8-059d-48e0-a730-975a04255061"/>
 			<Metadata name="Document.ИзменитьПоказанияПробега.Attribute.КрайнееПоказаниеОдометра" id="fbbed672-3376-4b05-b702-35bbb9dcf63f"/>
 		</Metadata>
 		<Metadata name="Document.ИзменитьПоказанияПробега.ObjectModule" id="16e5bd63-ca9f-4726-bb11-2a2afce1eebd.0" configVersion="63872cbfde4f5d42b692cfed3e1fb8cc00000000"/>
-		<Metadata name="Document.ПроизвестиТО" id="53458b53-6979-4e27-b177-293aa6a5b4c3" configVersion="e41b59a8a62703428c7eeff98420212a00000000">
+		<Metadata name="Document.ПроизвестиТО" id="53458b53-6979-4e27-b177-293aa6a5b4c3" configVersion="4ff6bf734a6c8f49832ab405f230748f00000000">
 			<Metadata name="Document.ПроизвестиТО.Attribute.Автомобиль" id="2023bdc4-51e1-423d-9edd-354c7579285a"/>
 			<Metadata name="Document.ПроизвестиТО.Attribute.Пробег" id="83d7254a-58e8-47d2-9a8c-e7aa428462f4"/>
 			<Metadata name="Document.ПроизвестиТО.TabularSection.ВыполненыеРаботы" id="9f2b9d1a-daea-401f-87ff-1a45118e45f6"/>
 			<Metadata name="Document.ПроизвестиТО.TabularSection.ВыполненыеРаботы.Attribute.РегламентнаяОперация" id="c1a6f0ad-4396-4d90-9bce-f31c692d1c40"/>
 		</Metadata>
-		<Metadata name="Document.ПроизвестиТО.ObjectModule" id="53458b53-6979-4e27-b177-293aa6a5b4c3.0" configVersion="48cee02b3fbf9d46b687236c6399c6ce00000000"/>
+		<Metadata name="Document.ПроизвестиТО.ObjectModule" id="53458b53-6979-4e27-b177-293aa6a5b4c3.0" configVersion="06af020efdff524fb72c900cd367489e00000000"/>
 		<Metadata name="Document.УстановитьРегламенты" id="5497f3ee-a99a-4f22-a337-254127f0b6f0" configVersion="ba166d6ac1518d4fbb513938e0d27d8800000000">
 			<Metadata name="Document.УстановитьРегламенты.TabularSection.ТЧРегламентов" id="152cb21f-afd7-4328-b427-cf6da0837026"/>
 			<Metadata name="Document.УстановитьРегламенты.TabularSection.ТЧРегламентов.Attribute.РегламентнаяОперация" id="4bb5fdf5-763a-41fb-8ed0-45d64a0d64ed"/>
@@ -42,6 +60,11 @@
 			<Metadata name="Document.УстановитьРегламенты.Attribute.Автомобиль" id="fd7dde97-2a26-4fc7-92f1-7990249474bb"/>
 		</Metadata>
 		<Metadata name="Document.УстановитьРегламенты.ObjectModule" id="5497f3ee-a99a-4f22-a337-254127f0b6f0.0" configVersion="73e9a75784ceb54ca72ebcbf5c9725f600000000"/>
+		<Metadata name="Enum.ЕдиницыИзмерения" id="beb52b57-d231-49c5-9f03-be53b6857b62" configVersion="58acfecbcdec42459054712f81d98ae400000000">
+			<Metadata name="Enum.ЕдиницыИзмерения.EnumValue.Литр" id="55442db7-41a6-4a3c-9d91-ac586d047231"/>
+			<Metadata name="Enum.ЕдиницыИзмерения.EnumValue.Штука" id="833f80cf-50d2-48d5-abff-26ac4e4f6699"/>
+			<Metadata name="Enum.ЕдиницыИзмерения.EnumValue.Комплект" id="b94b5f35-51a1-48e2-8c6e-4ecab8cd96e6"/>
+		</Metadata>
 		<Metadata name="InformationRegister.ПробегАвтомобиля" id="e7b95bab-0b8e-4e72-865c-e1e19bb10080" configVersion="990aa249cd99584e8221ed48cd2b97d600000000">
 			<Metadata name="InformationRegister.ПробегАвтомобиля.Dimension.Автомобиль" id="3558b2f4-e70e-43da-ad4c-f218f0de5bd3"/>
 			<Metadata name="InformationRegister.ПробегАвтомобиля.Resource.Пробег" id="bf3a6d96-448f-4afd-a824-b54778f7257c"/>

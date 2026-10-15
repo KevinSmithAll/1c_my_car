@@ -265,6 +265,8 @@
 			<Document>ИзменитьПоказанияПробега</Document>
 			<Document>УстановитьРегламенты</Document>
 			<Document>ПроизвестиТО</Document>
+			<Enum>ЕдиницыИзмерения</Enum>
+			<DataProcessor>ЗагрузкаДеталей</DataProcessor>
 			<InformationRegister>УстановкаРегламентов</InformationRegister>
 			<InformationRegister>ПробегАвтомобиля</InformationRegister>
 			<InformationRegister>СделанныеТО</InformationRegister>

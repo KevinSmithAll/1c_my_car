@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Артикул" id="10">
+			<DataPath>1/0:4221b2ca-b3cc-4539-af1b-dfd66833bcd9</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="АртикулКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="АртикулРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="Автомобиль" id="16">
+			<DataPath>Объект.Автомобиль</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="АвтомобильКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="АвтомобильРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="Комментарий" id="13">
+			<DataPath>Объект.Комментарий</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<Table name="Бренды" id="19">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Бренды</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="БрендыКонтекстноеМеню" id="20"/>
+			<AutoCommandBar name="БрендыКоманднаяПанель" id="21"/>
+			<ExtendedTooltip name="БрендыРасширеннаяПодсказка" id="22"/>
+			<SearchStringAddition name="БрендыСтрокаПоиска" id="23">
+				<AdditionSource>
+					<Item>Бренды</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="БрендыСтрокаПоискаКонтекстноеМеню" id="24"/>
+				<ExtendedTooltip name="БрендыСтрокаПоискаРасширеннаяПодсказка" id="25"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="БрендыСостояниеПросмотра" id="26">
+				<AdditionSource>
+					<Item>Бренды</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="БрендыСостояниеПросмотраКонтекстноеМеню" id="27"/>
+				<ExtendedTooltip name="БрендыСостояниеПросмотраРасширеннаяПодсказка" id="28"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="БрендыУправлениеПоиском" id="29">
+				<AdditionSource>
+					<Item>Бренды</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="БрендыУправлениеПоискомКонтекстноеМеню" id="30"/>
+				<ExtendedTooltip name="БрендыУправлениеПоискомРасширеннаяПодсказка" id="31"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="БрендыНомерСтроки" id="32">
+					<DataPath>Объект.Бренды.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="БрендыНомерСтрокиКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="БрендыНомерСтрокиРасширеннаяПодсказка" id="34"/>
+				</LabelField>
+				<InputField name="БрендыСтрана" id="35">
+					<DataPath>Объект.Бренды.Страна</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="БрендыСтранаКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="БрендыСтранаРасширеннаяПодсказка" id="37"/>
+				</InputField>
+				<InputField name="БрендыФирма" id="38">
+					<DataPath>Объект.Бренды.Фирма</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="БрендыФирмаКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="БрендыФирмаРасширеннаяПодсказка" id="40"/>
+				</InputField>
+				<InputField name="БрендыАртикул" id="41">
+					<DataPath>Объект.Бренды.Артикул</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="БрендыАртикулКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="БрендыАртикулРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<InputField name="БрендыПримернаяЦена" id="44">
+					<DataPath>Объект.Бренды.ПримернаяЦена</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="БрендыПримернаяЦенаКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="БрендыПримернаяЦенаРасширеннаяПодсказка" id="46"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.НоменклатураДеталей</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>
