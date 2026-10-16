@@ -49,8 +49,8 @@
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
-			<DefaultObjectForm/>
-			<DefaultListForm/>
+			<DefaultObjectForm>Document.ПроизвестиТО.Form.ФормаДокумента</DefaultObjectForm>
+			<DefaultListForm>Document.ПроизвестиТО.Form.ФормаСписка</DefaultListForm>
 			<DefaultChoiceForm/>
 			<AuxiliaryObjectForm/>
 			<AuxiliaryListForm/>
@@ -164,6 +164,8 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
+			<Form>ФормаДокумента</Form>
+			<Form>ФормаСписка</Form>
 			<TabularSection uuid="9f2b9d1a-daea-401f-87ff-1a45118e45f6">
 				<InternalInfo>
 					<xr:GeneratedType name="DocumentTabularSection.ПроизвестиТО.ВыполненыеРаботы" category="TabularSection">
@@ -200,7 +202,7 @@
 							</Synonym>
 							<Comment/>
 							<Type>
-								<v8:Type>cfg:CatalogRef.РаботыПоАвто</v8:Type>
+								<v8:Type>cfg:DocumentRef.ПланированиеРаботПоАвто</v8:Type>
 							</Type>
 							<PasswordMode>false</PasswordMode>
 							<Format/>

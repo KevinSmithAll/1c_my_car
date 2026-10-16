@@ -21,9 +21,9 @@
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.Форма</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.Автомобиль</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">43aef32b-4f12-4584-adaf-3a97183ab048</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаДеталей</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.ЕдиницыИзмерения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЗапланированныеТО</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>

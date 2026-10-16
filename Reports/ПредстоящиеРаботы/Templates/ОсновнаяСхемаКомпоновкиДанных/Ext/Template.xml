@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Автомобиль</dataPath>
+			<field>Автомобиль</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НазваниеРаботы</dataPath>
+			<field>НазваниеРаботы</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РазоваяРабота</dataPath>
+			<field>РазоваяРабота</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разовая работа</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Работа</dataPath>
+			<field>Работа</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОсталосьКМ</dataPath>
+			<field>ОсталосьКМ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Осталось КМ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаСледующегоТО</dataPath>
+			<field>ДатаСледующегоТО</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата следующего ТО</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДФ=dd.MM.yyyy</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаПоследнегоВыполнения</dataPath>
+			<field>ДатаПоследнегоВыполнения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата последнего выполнения</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДФ=dd.MM.yyyy</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+    План.Автомобиль КАК Автомобиль,
+    План.НазваниеРаботы КАК НазваниеРаботы,
+    ЗапланированныеТО.ЭтоРазоваяРабота КАК РазоваяРабота,
+
+    ВЫБОР
+        КОГДА ЗапланированныеТО.ЭтоРазоваяРабота
+            ТОГДА ЗапланированныеТО.НаКакомПробеге
+                - ЕСТЬNULL(
+                    ПробегАвтомобиля.Пробег,
+                    Автомобили.НачальныйПробег
+                )
+        ИНАЧЕ
+            ЕСТЬNULL(
+                СделанныеТО.НаПробеге,
+                Автомобили.НачальныйПробег
+            )
+            + ЗапланированныеТО.ИнтервалКМ
+            - ЕСТЬNULL(
+                ПробегАвтомобиля.Пробег,
+                Автомобили.НачальныйПробег
+            )
+    КОНЕЦ КАК ОсталосьКМ,
+
+    ВЫБОР
+        КОГДА ЗапланированныеТО.ЭтоРазоваяРабота
+            ТОГДА ДОБАВИТЬКДАТЕ(
+                Автомобили.ДатаНачалаЭксплуатации,
+                МЕСЯЦ,
+                План.ЧерезСколькоМесяцев
+            )
+        ИНАЧЕ
+            ВЫБОР
+                КОГДА ЗапланированныеТО.ИнтервалВремени &gt; 0
+                    ТОГДА ДОБАВИТЬКДАТЕ(
+                        ЕСТЬNULL(
+                            СделанныеТО.Период,
+                            Автомобили.ДатаНачалаЭксплуатации
+                        ),
+                        МЕСЯЦ,
+                        ЗапланированныеТО.ИнтервалВремени
+                    )
+                ИНАЧЕ ДАТАВРЕМЯ(1, 1, 1)
+            КОНЕЦ
+    КОНЕЦ КАК ДатаСледующегоТО,
+
+    СделанныеТО.Период КАК ДатаПоследнегоВыполнения
+
+ИЗ
+    РегистрСведений.ЗапланированныеТО
+        КАК ЗапланированныеТО
+
+    ВНУТРЕННЕЕ СОЕДИНЕНИЕ
+        Документ.ПланированиеРаботПоАвто КАК План
+    ПО ЗапланированныеТО.ЗапланированнаяРабота = План.Ссылка
+
+    ВНУТРЕННЕЕ СОЕДИНЕНИЕ
+        Справочник.Автомобили КАК Автомобили
+    ПО План.Автомобиль = Автомобили.Ссылка
+
+    ЛЕВОЕ СОЕДИНЕНИЕ
+        РегистрСведений.ПробегАвтомобиля.СрезПоследних(
+            ,
+            Автомобиль = &amp;Автомобиль
+        ) КАК ПробегАвтомобиля
+    ПО План.Автомобиль = ПробегАвтомобиля.Автомобиль
+
+    ЛЕВОЕ СОЕДИНЕНИЕ
+        РегистрСведений.СделанныеТО.СрезПоследних(
+            ,
+            Автомобиль = &amp;Автомобиль
+        ) КАК СделанныеТО
+    ПО ЗапланированныеТО.Автомобиль = СделанныеТО.Автомобиль
+        И ЗапланированныеТО.ЗапланированнаяРабота =
+            СделанныеТО.Работа
+
+ГДЕ
+    План.Автомобиль = &amp;Автомобиль
+
+    И (
+        НЕ ЗапланированныеТО.ЭтоРазоваяРабота
+        ИЛИ СделанныеТО.Работа ЕСТЬ NULL
+    )
+
+    И (
+        // По времени: срок уже наступил
+        // или наступит в течение следующих 6 месяцев
+        (
+            (
+                ЗапланированныеТО.ЭтоРазоваяРабота
+                И План.ЧерезСколькоМесяцев &gt; 0
+            )
+            ИЛИ
+            (
+                НЕ ЗапланированныеТО.ЭтоРазоваяРабота
+                И ЗапланированныеТО.ИнтервалВремени &gt; 0
+            )
+        )
+        И
+        (
+            ВЫБОР
+                КОГДА ЗапланированныеТО.ЭтоРазоваяРабота
+                    ТОГДА ДОБАВИТЬКДАТЕ(
+                        Автомобили.ДатаНачалаЭксплуатации,
+                        МЕСЯЦ,
+                        План.ЧерезСколькоМесяцев
+                    )
+                ИНАЧЕ ДОБАВИТЬКДАТЕ(
+                    ЕСТЬNULL(
+                        СделанныеТО.Период,
+                        Автомобили.ДатаНачалаЭксплуатации
+                    ),
+                    МЕСЯЦ,
+                    ЗапланированныеТО.ИнтервалВремени
+                )
+            КОНЕЦ &lt;= ДОБАВИТЬКДАТЕ(
+                &amp;ТекущаяДата,
+                МЕСЯЦ,
+                &amp;Месяцев
+            )
+        )
+
+        ИЛИ
+
+        // По пробегу: осталось 15 000 км или меньше
+        (
+            (
+                ЗапланированныеТО.ЭтоРазоваяРабота
+                И ЗапланированныеТО.НаКакомПробеге &gt; 0
+            )
+            ИЛИ
+            (
+                НЕ ЗапланированныеТО.ЭтоРазоваяРабота
+                И ЗапланированныеТО.ИнтервалКМ &gt; 0
+            )
+        )
+        И
+        (
+            ВЫБОР
+                КОГДА ЗапланированныеТО.ЭтоРазоваяРабота
+                    ТОГДА ЗапланированныеТО.НаКакомПробеге
+                ИНАЧЕ
+                    ЕСТЬNULL(
+                        СделанныеТО.НаПробеге,
+                        Автомобили.НачальныйПробег
+                    )
+                    + ЗапланированныеТО.ИнтервалКМ
+            КОНЕЦ
+            - ЕСТЬNULL(
+                ПробегАвтомобиля.Пробег,
+                Автомобили.НачальныйПробег
+            ) &lt;= &amp;Километража
+        )
+    )</query>
+	</dataSet>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Автомобиль</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Автомобиль</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Автомобили</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+		<denyIncompleteValues>true</denyIncompleteValues>
+	</parameter>
+	<parameter>
+		<name>Километража</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Километража</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>0</v8:Digits>
+				<v8:FractionDigits>0</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+		<value xsi:type="xs:decimal">0</value>
+		<useRestriction>false</useRestriction>
+		<denyIncompleteValues>true</denyIncompleteValues>
+	</parameter>
+	<parameter>
+		<name>Месяцев</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Месяцев</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>0</v8:Digits>
+				<v8:FractionDigits>0</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+		<value xsi:type="xs:decimal">0</value>
+		<useRestriction>false</useRestriction>
+		<denyIncompleteValues>true</denyIncompleteValues>
+	</parameter>
+	<parameter>
+		<name>ТекущаяДата</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Текущая дата</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>ТекущаяДата()</expression>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НазваниеРаботы</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОсталосьКМ</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаПоследнегоВыполнения</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаСледующегоТО</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Автомобиль</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>12cbdd85-6f9e-4c75-8632-1042088ca4de</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Километража</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">10000</dcscor:value>
+					<dcsset:userSettingID>14e04bff-25c8-409c-8746-cb90a09de996</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Месяцев</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">6</dcscor:value>
+					<dcsset:userSettingID>9c911727-f173-48fa-89e6-5620b71b55d4</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Арктика</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>РасположениеПолейГруппировки</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionGroupFieldsPlacement">SeparatelyAndInTotalsOnly</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Автомобиль</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

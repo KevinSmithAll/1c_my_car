@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Автомобиль" id="43">
+			<DataPath>Объект.Автомобиль</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="АвтомобильКонтекстноеМеню" id="44"/>
+			<ExtendedTooltip name="АвтомобильРасширеннаяПодсказка" id="45"/>
+		</InputField>
+		<UsualGroup name="Группа2" id="49">
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="50"/>
+			<ChildItems>
+				<InputField name="Дата" id="4">
+					<DataPath>Объект.Date</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<Button name="НаДатуСозданияАвто" id="51">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.НаДатуСозданияАвто</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата начала эксплуатации</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="НаДатуСозданияАвтоРасширеннаяПодсказка" id="52"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="НазваниеРаботы" id="7">
+			<DataPath>Объект.НазваниеРаботы</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НазваниеРаботыКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="НазваниеРаботыРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="ВидРаботы" id="61">
+			<DataPath>Объект.ВидРаботы</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ВидРаботыКонтекстноеМеню" id="62"/>
+			<ExtendedTooltip name="ВидРаботыРасширеннаяПодсказка" id="63"/>
+			<Events>
+				<Event name="OnChange">ВидРаботыПриИзменении</Event>
+			</Events>
+		</InputField>
+		<CheckBoxField name="РазоваяПоСостоянию" id="58">
+			<DataPath>1/0:e5d172d3-f447-4264-a6b2-e337fa850ca2</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="РазоваяПоСостояниюКонтекстноеМеню" id="59"/>
+			<ExtendedTooltip name="РазоваяПоСостояниюРасширеннаяПодсказка" id="60"/>
+		</CheckBoxField>
+		<UsualGroup name="Группа3" id="53">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Интервалы</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="54"/>
+			<ChildItems>
+				<InputField name="ПоПробегу" id="13">
+					<DataPath>Объект.ПоПробегу</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПоПробегуКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ПоПробегуРасширеннаяПодсказка" id="15"/>
+				</InputField>
+				<InputField name="ПоВремени" id="16">
+					<DataPath>Объект.ПоВремени</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПоВремениКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ПоВремениРасширеннаяПодсказка" id="18"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа1" id="41">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разовость</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="42"/>
+			<ChildItems>
+				<CheckBoxField name="РазоваяРабота" id="10">
+					<DataPath>1/0:fbd126db-ba59-4b3d-91ca-2dabbdb1d596</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Switcher</CheckBoxType>
+					<ContextMenu name="РазоваяРаботаКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="РазоваяРаботаРасширеннаяПодсказка" id="12"/>
+					<Events>
+						<Event name="OnChange">РазоваяРаботаПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<InputField name="НаКакомПробеге" id="19">
+					<DataPath>Объект.НаКакомПробеге</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="НаКакомПробегеКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="НаКакомПробегеРасширеннаяПодсказка" id="21"/>
+				</InputField>
+				<InputField name="ЧерезСколькоМесяцев" id="46">
+					<DataPath>Объект.ЧерезСколькоМесяцев</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ЧерезСколькоМесяцевКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="ЧерезСколькоМесяцевРасширеннаяПодсказка" id="48"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ТЧРегламентов" id="22">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ТЧРегламентов</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТЧРегламентовКонтекстноеМеню" id="23"/>
+			<AutoCommandBar name="ТЧРегламентовКоманднаяПанель" id="24"/>
+			<ExtendedTooltip name="ТЧРегламентовРасширеннаяПодсказка" id="25"/>
+			<SearchStringAddition name="ТЧРегламентовСтрокаПоиска" id="26">
+				<AdditionSource>
+					<Item>ТЧРегламентов</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТЧРегламентовСтрокаПоискаКонтекстноеМеню" id="27"/>
+				<ExtendedTooltip name="ТЧРегламентовСтрокаПоискаРасширеннаяПодсказка" id="28"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТЧРегламентовСостояниеПросмотра" id="29">
+				<AdditionSource>
+					<Item>ТЧРегламентов</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТЧРегламентовСостояниеПросмотраКонтекстноеМеню" id="30"/>
+				<ExtendedTooltip name="ТЧРегламентовСостояниеПросмотраРасширеннаяПодсказка" id="31"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТЧРегламентовУправлениеПоиском" id="32">
+				<AdditionSource>
+					<Item>ТЧРегламентов</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТЧРегламентовУправлениеПоискомКонтекстноеМеню" id="33"/>
+				<ExtendedTooltip name="ТЧРегламентовУправлениеПоискомРасширеннаяПодсказка" id="34"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ТЧРегламентовНомерСтроки" id="35">
+					<DataPath>Объект.ТЧРегламентов.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЧРегламентовНомерСтрокиКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ТЧРегламентовНомерСтрокиРасширеннаяПодсказка" id="37"/>
+				</LabelField>
+				<InputField name="ТЧРегламентовРегламентнаяОперация" id="38">
+					<DataPath>Объект.ТЧРегламентов.РегламентнаяОперация</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТЧРегламентовРегламентнаяОперацияКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ТЧРегламентовРегламентнаяОперацияРасширеннаяПодсказка" id="40"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ПланированиеРаботПоАвто</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="НаДатуСозданияАвто" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>На дату создания авто</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>На дату создания авто</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НаДатуСозданияАвто</Action>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>InformationRegister.ЗапланированныеТО.StandardCommand.OpenByRecorder</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

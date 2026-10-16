@@ -1,42 +1,42 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
-	<InformationRegister uuid="befb2bea-4bfb-4e54-ad3c-ea2ec498d1d6">
+	<InformationRegister uuid="b5c37184-af9e-4e4e-bc25-87bfe2990a5c">
 		<InternalInfo>
-			<xr:GeneratedType name="InformationRegisterRecord.НачальныеПараметрыТО" category="Record">
-				<xr:TypeId>f69ba624-eef9-46c5-9909-9a4e8098b10f</xr:TypeId>
-				<xr:ValueId>9bafcad8-a890-4e9b-8662-0fcb550e9f98</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecord.ЗапланированныеТО" category="Record">
+				<xr:TypeId>3fc6f2f0-bdc2-4a49-893a-6252d0765851</xr:TypeId>
+				<xr:ValueId>ca64b830-1cac-4b9e-a4d8-1e833b3bfa2e</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterManager.НачальныеПараметрыТО" category="Manager">
-				<xr:TypeId>50ce327b-1597-4152-a5df-12bb4a9777b4</xr:TypeId>
-				<xr:ValueId>654a28f0-ee85-4934-a97b-89a9267c3ff6</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterManager.ЗапланированныеТО" category="Manager">
+				<xr:TypeId>14a4c758-1a07-434c-9918-222083c803e3</xr:TypeId>
+				<xr:ValueId>029f918e-a371-49eb-a2ec-45088279247d</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterSelection.НачальныеПараметрыТО" category="Selection">
-				<xr:TypeId>48c87557-218f-43f2-b33a-4b478c3a5bec</xr:TypeId>
-				<xr:ValueId>c2327316-1597-401e-a95f-f5397346bc21</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterSelection.ЗапланированныеТО" category="Selection">
+				<xr:TypeId>1db79f31-5afa-4a52-8d26-8b08393906d9</xr:TypeId>
+				<xr:ValueId>6592c6f2-2b1c-4a37-b2bc-baafb69c7da9</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterList.НачальныеПараметрыТО" category="List">
-				<xr:TypeId>f305aee9-ae42-45b5-bdd7-a648dfa230fd</xr:TypeId>
-				<xr:ValueId>743a34db-d2d9-4a01-80da-070e75f1d580</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterList.ЗапланированныеТО" category="List">
+				<xr:TypeId>20826e74-c09b-4732-8bb8-e89853813567</xr:TypeId>
+				<xr:ValueId>29594cc0-a0ec-4a82-b048-cc274473962f</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordSet.НачальныеПараметрыТО" category="RecordSet">
-				<xr:TypeId>ae6688cb-9e25-4610-8c7d-b258664284ad</xr:TypeId>
-				<xr:ValueId>ccdeb8e4-c4d0-4933-8298-c7420ede4019</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecordSet.ЗапланированныеТО" category="RecordSet">
+				<xr:TypeId>d61e9bf3-d996-45f5-aa56-eacb5de0fe87</xr:TypeId>
+				<xr:ValueId>570f3ac6-bb84-454a-ac62-fe098d3d66bc</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordKey.НачальныеПараметрыТО" category="RecordKey">
-				<xr:TypeId>040b4e49-841b-436e-be0f-aca0775cebd7</xr:TypeId>
-				<xr:ValueId>16b407c5-2c29-4afc-b3ce-077077bbab62</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecordKey.ЗапланированныеТО" category="RecordKey">
+				<xr:TypeId>8f939bd0-062d-42db-894d-e0634a776e00</xr:TypeId>
+				<xr:ValueId>126077ba-826f-4e17-a585-62820630d9f4</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordManager.НачальныеПараметрыТО" category="RecordManager">
-				<xr:TypeId>12c4d4c1-2173-4d2d-9908-6e0d3864460c</xr:TypeId>
-				<xr:ValueId>8bb9d39d-838b-4a4e-8b3c-bce9845296e8</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecordManager.ЗапланированныеТО" category="RecordManager">
+				<xr:TypeId>915a4046-29a6-4d4a-925a-e7a5e7fef3eb</xr:TypeId>
+				<xr:ValueId>5b95b54b-8d49-40a3-bdd7-626904b032ba</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>НачальныеПараметрыТО</Name>
+			<Name>ЗапланированныеТО</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Начальные параметры ТО</v8:content>
+					<v8:content>Запланированные ТО</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -47,7 +47,7 @@
 			<AuxiliaryRecordForm/>
 			<AuxiliaryListForm/>
 			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
-			<WriteMode>Independent</WriteMode>
+			<WriteMode>RecorderSubordinate</WriteMode>
 			<MainFilterOnPeriod>false</MainFilterOnPeriod>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<DataLockControlMode>Managed</DataLockControlMode>
@@ -64,13 +64,13 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
-			<Resource uuid="b928a215-b4bf-42c3-aba3-a5e30dcecaad">
+			<Resource uuid="c2625c8a-326f-4075-9f8c-4be2281f83f2">
 				<Properties>
-					<Name>НачальныйПробег</Name>
+					<Name>НаКакомПробеге</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Начальный пробег</v8:content>
+							<v8:content>На каком пробеге</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -108,21 +108,23 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Resource>
-			<Resource uuid="30d4ebf8-bf36-4f63-a35a-46afcb14ba58">
+			<Resource uuid="1d2fd3fc-e391-4d4b-adb5-0dc680906461">
 				<Properties>
-					<Name>ДатаНачала</Name>
+					<Name>ИнтервалКМ</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Дата начала</v8:content>
+							<v8:content>Интервал КМ</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>xs:dateTime</v8:Type>
-						<v8:DateQualifiers>
-							<v8:DateFractions>Date</v8:DateFractions>
-						</v8:DateQualifiers>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>6</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -150,7 +152,95 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Resource>
-			<Dimension uuid="5af65297-bf44-4cd5-aa30-b355f3f6467e">
+			<Resource uuid="4c619a75-9a06-4af4-a757-a74a39cbd361">
+				<Properties>
+					<Name>ИнтервалВремени</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Интервал времени</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>2</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Resource>
+			<Resource uuid="a3d99514-5c4e-4a29-8edc-d6536dffae1a">
+				<Properties>
+					<Name>НаКакоеВремя</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>На какое время</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>2</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Resource>
+			<Dimension uuid="41dd16d6-24dc-42af-ada6-f6acdd6ae480">
 				<Properties>
 					<Name>Автомобиль</Name>
 					<Synonym>
@@ -193,18 +283,61 @@
 					<TypeReductionMode>TransformValues</TypeReductionMode>
 				</Properties>
 			</Dimension>
-			<Dimension uuid="841cb9e7-3080-488a-9009-0da8acad4a7b">
+			<Dimension uuid="7380bb2d-aff9-4983-ac81-b988f5f88f8a">
 				<Properties>
-					<Name>Работа</Name>
+					<Name>ЗапланированнаяРабота</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Работа</v8:content>
+							<v8:content>Запланированная работа</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:CatalogRef.РаботыПоАвто</v8:Type>
+						<v8:Type>cfg:DocumentRef.ПланированиеРаботПоАвто</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Master>false</Master>
+					<MainFilter>true</MainFilter>
+					<DenyIncompleteValues>false</DenyIncompleteValues>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+					<TypeReductionMode>TransformValues</TypeReductionMode>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="1c0bbfd6-0a6b-40fc-8679-49d515c01abd">
+				<Properties>
+					<Name>ЭтоРазоваяРабота</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Это разовая работа</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>

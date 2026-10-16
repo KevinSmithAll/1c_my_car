@@ -22,7 +22,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.РегламентныеОперации</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Автомобили</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НоменклатураДеталей</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.РаботыПоАвто</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">3586107e-0d39-44df-bc7c-02c2593a3479</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

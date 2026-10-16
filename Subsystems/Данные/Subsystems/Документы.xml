@@ -20,8 +20,8 @@
 			</Picture>
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ИзменитьПоказанияПробега</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">5497f3ee-a99a-4f22-a337-254127f0b6f0</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ПроизвестиТО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПланированиеРаботПоАвто</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
