@@ -28,23 +28,30 @@
 		<Metadata name="Catalog.РегламентныеОперации.Form.ФормаЭлемента" id="26fbe4ea-5728-473d-9a66-2e22f4cadf4f" configVersion="8ccd144f6756ef469f09b6201c9fa3b100000000"/>
 		<Metadata name="Catalog.РегламентныеОперации.Form.ФормаЭлемента.Form" id="26fbe4ea-5728-473d-9a66-2e22f4cadf4f.0" configVersion="56913218bb86f142b6b433f239ea6f0200000000"/>
 		<Metadata name="Catalog.РегламентныеОперации.ObjectModule" id="da489757-381e-4faa-b126-3aaf232918c9.0" configVersion="6e404e9ef58a9540a2bb394322d0c86c00000000"/>
+		<Metadata name="CommandGroup.Документы" id="2398fe57-a0e2-431c-85aa-26495fd357c1" configVersion="cb1cd7ba9c1cf54da34e0e11f67faa7600000000"/>
+		<Metadata name="CommandGroup.Регистры" id="dd6e754c-0de8-4225-89bf-cb10be7b3a56" configVersion="36c520ce709de2408be9be504779615200000000"/>
+		<Metadata name="CommandGroup.Справочники" id="05f25c5b-c24e-4dce-912d-7e8323145463" configVersion="f934f9fbbcb71f4dad3b9ed6c652525a00000000"/>
 		<Metadata name="CommonForm.Форма" id="b5e673b4-85e4-4b5e-9566-70cda3f65282" configVersion="a914f0fd9cf9d64e82b0ff4a6304e32200000000"/>
 		<Metadata name="CommonForm.Форма.Form" id="b5e673b4-85e4-4b5e-9566-70cda3f65282.0" configVersion="721cb3c1fe0d9d4f9b6dfc5beecd79e300000000"/>
-		<Metadata name="CommonModule.ОбщийМодуль" id="83ddf3e4-e35a-478c-b052-1878c0a60790" configVersion="3a025754deab114e9e18fd79d2824ce100000000"/>
-		<Metadata name="CommonModule.ОбщийМодуль.Module" id="83ddf3e4-e35a-478c-b052-1878c0a60790.0" configVersion="a407fc904075b048951e85b237c889a000000000"/>
-		<Metadata name="Configuration.МойАвтомобиль" id="bec91e1a-e6b1-46de-bf51-90594750b8df" configVersion="c8706097211ae5478ba50ea7834bc00000000000"/>
+		<Metadata name="CommonModule.ОбщийМодуль" id="83ddf3e4-e35a-478c-b052-1878c0a60790" configVersion="3fb4ae8f846b9246beb28aaddfd3cad300000000"/>
+		<Metadata name="CommonModule.ОбщийМодуль.Module" id="83ddf3e4-e35a-478c-b052-1878c0a60790.0" configVersion="5c928f57b5ead842bd7d14582d03c12600000000"/>
+		<Metadata name="Configuration.МойАвтомобиль" id="bec91e1a-e6b1-46de-bf51-90594750b8df" configVersion="36f81392a1448747985dc7c4c019995300000000"/>
 		<Metadata name="Configuration.МойАвтомобиль.ClientApplicationInterface" id="2f441f09-e54c-4997-bc99-972ffb1e2f7b.b" configVersion="1dbe64bb29da1c439d1fdb1577ea59c600000000"/>
-		<Metadata name="Configuration.МойАвтомобиль.HomePageWorkArea" id="2f441f09-e54c-4997-bc99-972ffb1e2f7b.8" configVersion="b39914acd0db014598e4ee026786d79900000000"/>
+		<Metadata name="Configuration.МойАвтомобиль.HomePageWorkArea" id="2f441f09-e54c-4997-bc99-972ffb1e2f7b.8" configVersion="2b900f363340f140b8cca91e5a67d22f00000000"/>
+		<Metadata name="Configuration.МойАвтомобиль.ManagedApplicationModule" id="2f441f09-e54c-4997-bc99-972ffb1e2f7b.6" configVersion="da7a7dd66622c9438ff1b290be68744900000000"/>
 		<Metadata name="Configuration.МойАвтомобиль.Splash" id="2f441f09-e54c-4997-bc99-972ffb1e2f7b.2" configVersion="f344d8390b064442a9c743ca2843967f00000000"/>
 		<Metadata name="Constant.Автомобиль" id="0b2a1b0b-3ad0-4f2b-bd3e-12e0865f5827" configVersion="28322cba06d0454689074ded9fef741200000000"/>
 		<Metadata name="DataProcessor.ЗагрузкаДеталей" id="ca81e0f5-67dc-4397-a64e-96ccc0303fa5" configVersion="31cf7e167ed3fd4bb2db7777189077be00000000"/>
 		<Metadata name="DataProcessor.ЗагрузкаДеталей.Form.Форма" id="92a44fe1-3011-40be-899d-25c1c8779842" configVersion="6d49cead3c1f234ebcced4002665203f00000000"/>
 		<Metadata name="DataProcessor.ЗагрузкаДеталей.Form.Форма.Form" id="92a44fe1-3011-40be-899d-25c1c8779842.0" configVersion="aead0ed396a61242882608851ad3ed7800000000"/>
-		<Metadata name="Document.ИзменитьПоказанияПробега" id="16e5bd63-ca9f-4726-bb11-2a2afce1eebd" configVersion="2f602c20312025489ccdc8036a39e6d200000000">
+		<Metadata name="Document.ИзменитьПоказанияПробега" id="16e5bd63-ca9f-4726-bb11-2a2afce1eebd" configVersion="ca9b6273925a6248b01d80b9b6f96eac00000000">
 			<Metadata name="Document.ИзменитьПоказанияПробега.Attribute.Автомобиль" id="1596dbfc-3930-4749-8e8c-7d398c2c1951"/>
+			<Metadata name="Document.ИзменитьПоказанияПробега.Attribute.НаДату" id="37aedba4-f865-410b-a761-bfec76ff7636"/>
 			<Metadata name="Document.ИзменитьПоказанияПробега.Attribute.ПоказаниеОдометра" id="c4a572f8-059d-48e0-a730-975a04255061"/>
 			<Metadata name="Document.ИзменитьПоказанияПробега.Attribute.КрайнееПоказаниеОдометра" id="fbbed672-3376-4b05-b702-35bbb9dcf63f"/>
 		</Metadata>
+		<Metadata name="Document.ИзменитьПоказанияПробега.Form.ФормаДокумента" id="f8a74d4f-1d73-40d0-a359-5af4b602adc5" configVersion="c0e8642150da224cb0b6f686482a97e800000000"/>
+		<Metadata name="Document.ИзменитьПоказанияПробега.Form.ФормаДокумента.Form" id="f8a74d4f-1d73-40d0-a359-5af4b602adc5.0" configVersion="9ca384c42dee0044996dc05ea5eb28e700000000"/>
 		<Metadata name="Document.ИзменитьПоказанияПробега.ObjectModule" id="16e5bd63-ca9f-4726-bb11-2a2afce1eebd.0" configVersion="63872cbfde4f5d42b692cfed3e1fb8cc00000000"/>
 		<Metadata name="Document.ПланированиеРаботПоАвто" id="2f8603a6-1d18-4b58-8751-e089a01f53b9" configVersion="6aadb616e8cac8429bb3d5e5ff1e50b700000000">
 			<Metadata name="Document.ПланированиеРаботПоАвто.Attribute.ПоПробегу" id="30b21e8f-d140-465a-93e0-53cc087cd528"/>
@@ -107,17 +114,16 @@
 		<Metadata name="Report.ВыполненныеРаботы" id="b388cbb3-d95c-4805-b001-2794b29f2c73" configVersion="b3ed5053143039448b0d608b7332f86900000000"/>
 		<Metadata name="Report.ВыполненныеРаботы.Template.ОсновнаяСхемаКомпоновкиДанных" id="a2c1138d-f504-4719-ba9b-d7936b209dcb" configVersion="2c64bc61640f294b98e0386a392a71a900000000"/>
 		<Metadata name="Report.ВыполненныеРаботы.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="a2c1138d-f504-4719-ba9b-d7936b209dcb.0" configVersion="1d58c7bb4672be449fe30976a8a84ee900000000"/>
-		<Metadata name="Report.ОтчетПоТО" id="cac33510-5f8c-4ae3-bde5-938bdddc391a" configVersion="1e9a51f693d8484e879bc95d307b3b3700000000"/>
-		<Metadata name="Report.ОтчетПоТО.Template.ОсновнаяСхемаКомпоновкиДанных" id="713a90d6-b12e-49ca-b200-2862856e212b" configVersion="059a2a033384c249af6dbaf55f489ac300000000"/>
-		<Metadata name="Report.ОтчетПоТО.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="713a90d6-b12e-49ca-b200-2862856e212b.0" configVersion="c7cba8af98275f4881f8bc6bc601f66100000000"/>
+		<Metadata name="Report.ОтчетПоТО" id="cac33510-5f8c-4ae3-bde5-938bdddc391a" configVersion="cb94b93fd5090547a7a2a08b534b8bf400000000"/>
+		<Metadata name="Report.ОтчетПоТО.Form.ФормаОтчета" id="d9d9a188-3b98-4ec7-887a-b26da11487d4" configVersion="ac6b5af3d06eff44b9084dc1b9f3ff7200000000"/>
+		<Metadata name="Report.ОтчетПоТО.Form.ФормаОтчета.Form" id="d9d9a188-3b98-4ec7-887a-b26da11487d4.0" configVersion="24dcd61f7899ae438d3136d6b68f0be900000000"/>
+		<Metadata name="Report.ОтчетПоТО.Template.ОсновнаяСхемаКомпоновкиДанных" id="713a90d6-b12e-49ca-b200-2862856e212b" configVersion="24a65c49771c7e40873a7684ee018d2d00000000"/>
+		<Metadata name="Report.ОтчетПоТО.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="713a90d6-b12e-49ca-b200-2862856e212b.0" configVersion="2d17a129dff0a54e909548bbd6e16d5a00000000"/>
 		<Metadata name="Report.ПредстоящиеРаботы" id="82176800-0e16-47b7-8691-ca3fdf2cb764" configVersion="d525aa7eb907b04d8140171355641dac00000000"/>
-		<Metadata name="Report.ПредстоящиеРаботы.Template.ОсновнаяСхемаКомпоновкиДанных" id="326888b7-3969-4a15-a31c-77b40dec95e0" configVersion="c01e58a9836f4b47beb0e527616862fc00000000"/>
-		<Metadata name="Report.ПредстоящиеРаботы.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="326888b7-3969-4a15-a31c-77b40dec95e0.0" configVersion="c693b993ad4556438c1e9d765841190100000000"/>
-		<Metadata name="Subsystem.Данные" id="9db04eb8-f559-4c1d-97c2-0ca14c30ca01" configVersion="85b325978bd8a64987410fd4b4d6643a00000000"/>
-		<Metadata name="Subsystem.Данные.Subsystem.Документы" id="d3a36056-8313-4def-a5da-fe9504b73a5e" configVersion="837e109db7d69045ad9d31b3ba0c8fd900000000"/>
-		<Metadata name="Subsystem.Данные.Subsystem.Регистры" id="bd1807d1-08a4-4e96-9c63-b7c18dc1a904" configVersion="24a08e7d87f7924caa5812a2cb0173ae00000000"/>
-		<Metadata name="Subsystem.Данные.Subsystem.Регистры.CommandInterface" id="bd1807d1-08a4-4e96-9c63-b7c18dc1a904.1" configVersion="1b6012505c15574080918e8fe2099be200000000"/>
-		<Metadata name="Subsystem.Данные.Subsystem.Справочники" id="4f4a7b42-cd66-4e2f-abb6-3d346195ce68" configVersion="35bff12347f00946b5f1e63b77b2040a00000000"/>
+		<Metadata name="Report.ПредстоящиеРаботы.Template.ОсновнаяСхемаКомпоновкиДанных" id="326888b7-3969-4a15-a31c-77b40dec95e0" configVersion="a717f96dcf32024ebf3e7f0861eda79500000000"/>
+		<Metadata name="Report.ПредстоящиеРаботы.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="326888b7-3969-4a15-a31c-77b40dec95e0.0" configVersion="caee8c63d7b83040a580a99ba17fd00c00000000"/>
+		<Metadata name="Subsystem.Данные" id="9db04eb8-f559-4c1d-97c2-0ca14c30ca01" configVersion="3c808415840145438a34203738358a8b00000000"/>
+		<Metadata name="Subsystem.Данные.CommandInterface" id="9db04eb8-f559-4c1d-97c2-0ca14c30ca01.1" configVersion="fdade509c6c94e4ab9973314b3e1cad500000000"/>
 		<Metadata name="Subsystem.Отчеты" id="4dbe4fff-ac4f-42e4-a7a8-e3aca577ef92" configVersion="f6516699148f244ca5ec8076896aed6100000000"/>
 	</ConfigVersions>
 </ConfigDumpInfo>

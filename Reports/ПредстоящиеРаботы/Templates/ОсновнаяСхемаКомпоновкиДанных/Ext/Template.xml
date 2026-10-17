@@ -276,7 +276,7 @@
 		<title xsi:type="v8:LocalStringType">
 			<v8:item>
 				<v8:lang>ru</v8:lang>
-				<v8:content>Километража</v8:content>
+				<v8:content>В течение КМ</v8:content>
 			</v8:item>
 		</title>
 		<valueType>
@@ -296,7 +296,7 @@
 		<title xsi:type="v8:LocalStringType">
 			<v8:item>
 				<v8:lang>ru</v8:lang>
-				<v8:content>Месяцев</v8:content>
+				<v8:content>В течение месяцев</v8:content>
 			</v8:item>
 		</title>
 		<valueType>

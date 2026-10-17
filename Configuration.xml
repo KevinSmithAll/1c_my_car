@@ -258,6 +258,9 @@
 			<Subsystem>Данные</Subsystem>
 			<Subsystem>Отчеты</Subsystem>
 			<CommonModule>ОбщийМодуль</CommonModule>
+			<CommandGroup>Справочники</CommandGroup>
+			<CommandGroup>Документы</CommandGroup>
+			<CommandGroup>Регистры</CommandGroup>
 			<Constant>Автомобиль</Constant>
 			<CommonForm>Форма</CommonForm>
 			<Catalog>РегламентныеОперации</Catalog>

@@ -275,6 +275,7 @@
 		</valueType>
 		<value xsi:nil="true"/>
 		<useRestriction>false</useRestriction>
+		<expression>Константы.Автомобиль.Получить()</expression>
 		<denyIncompleteValues>true</denyIncompleteValues>
 	</parameter>
 	<parameter>
